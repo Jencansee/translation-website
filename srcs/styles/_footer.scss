@@ -1,0 +1,49 @@
+.map-container {
+    position: relative;
+}
+.map-text-container {
+    z-index: 1000;
+    position: absolute;
+    background-color: rgba(43, 43, 43, 0.9);
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 35px;
+    font-size: $bodysize;
+    padding: 6rem;
+    right: 2%;
+    bottom: 6%;
+    h4, span {
+        font-size: $header3;
+        font-weight: bold;
+    }
+}
+
+.contacts-container {
+    min-height: 18vh;
+    background-color: black;
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+
+    ul{
+    @include flex(row, center, center);    
+    flex: 1 1 30rem;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li{
+        padding: 0rem 2rem;
+    }
+    }
+}
+.logo-container {
+    flex: 1 1 30rem;
+    text-align: center;
+}
+
+.footer-text {
+    flex: 1 1 30rem;
+    text-align: center;
+    font-size: $regular;
+    h5 {
+        font-size: $biggerbody;
+    }
+}

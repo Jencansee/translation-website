@@ -2,16 +2,51 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    &:focus{
+        border:2px solid#eca826;
+    }
 }
 
 html {
     font-size: 62.5%;
+    color:white;
 }
 
 
 /*COLORS*/
+$back-main-clr: rgb(49, 49, 49);
+$red-back-clr: #861B1B;
+$gray: #333;
+
+/*FONT SIZES*/
+$regular: 1.8rem;
+$header2: 6rem;
+$header3: 3rem;
+$bodysize: 2rem;
+$biggerbody: 2.5rem;
 
 
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
 
 
-@import 'global';
+input, 
+textarea {
+    border-radius: 25px; 
+    width: 30rem;
+    margin: 2rem;
+    padding: 1rem 2rem;
+}
+
+@import 'footer';
+@import 'header';
+@import 'body';
+
+body {
+    font-family: 'Oranienbaum', serif;
+}

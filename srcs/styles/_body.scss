@@ -1,0 +1,182 @@
+.hero {
+    min-height: 95vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(134, 27, 27, 0.9) 32.74%, rgba(53, 13, 13, 0.9) 101.49%), url(/srcs/img/hero-bg.jpg) no-repeat;
+    color: #f4f4f4;
+    /*linear-gradient(180deg, rgba(0,0,0,0.9) 1.49%, rgba(75, 35, 104, 0.9) 32.74%, rgba(58, 15, 88, 0.9) 101.49%), url(/srcs/img/home-bg.jpg); purple*/
+    /*linear-gradient(180deg, #000000 1.49%, #4B2368 32.74%, #3A0F58 101.49%)*/
+    h2 {
+        font-size: $header2;
+        text-align: center;
+        padding-top: 10rem;
+    }
+}
+
+.garanty-container {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    font-size: $bodysize;
+    padding: 10rem 0rem;
+
+.garanty{
+    padding: 5rem;
+    text-align: center;
+}
+}
+
+.hero-form {
+    @include flex(column, center, center);
+    flex-wrap: wrap;
+    padding: 0 0 2rem 0;
+}
+
+.input-container {
+    text-align: center;
+    input[type=submit] {
+        border:0 none;
+        cursor:pointer;
+        background: linear-gradient(to bottom, #f4cb56, #eca826);
+        font-weight: bold;
+    }
+}
+
+.hero-label {
+    padding: 2.5rem;
+    font-size: $biggerbody;
+    font-weight: bold;
+}
+
+/*SECTION ADVANTAGES*/
+.advantages-section {
+    min-height: 40vh;
+    @include flex(column, center, center);
+    background:linear-gradient(to bottom, #1e1e1e,#1a1a1a);
+    
+    h2 {
+        padding: 5rem 0;
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+.types-contatiner {
+    @include flex(row, center, flex-start);
+    font-size: $regular;
+    flex-wrap: wrap;
+}
+
+.translation-type {
+    @include flex(column, center, center);
+    flex: 1 1 20rem;
+    padding: 4rem 2rem;
+    p {
+        text-align: center;
+        padding: 2rem;
+    }   
+}
+
+/*TRUST US SECTION*/
+.trust-us {
+    min-height: 60vh;
+    text-align: center;
+    font-size: $bodysize;
+
+    h3 {
+        font-size: $header3;
+        font-weight: bold;
+    }
+}
+
+.trust-us-text {
+   width:80%;
+   margin: auto;
+   padding: 8rem 15rem;
+   background: $red-back-clr;
+    p {
+    text-align: start;
+    }
+}
+.trust-us-recommendation{
+    padding: 4rem 0rem;
+    color:  $gray;
+}
+
+.recommend-companies-container {
+    display: grid;
+    grid-template-columns: repeat(5, 30rem);
+    grid-template-rows: 50% 50%;
+    gap: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.recom-company {
+    fill: $gray;
+    &:hover {
+        fill:#f4cb56;
+    }
+}
+
+.order-sequence {
+    @include flex(column, center, center);
+    background: linear-gradient(to bottom, #1e1e1e, #1a1a1a);
+    
+    padding: 4rem 0rem;
+    h4 {
+        font-size: $header3;
+    }
+}
+.order-seq-list {
+    width: 80%;
+    @include flex(row, center, flex-start);
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: $regular;
+}
+.order-seq-num {
+    display: inline-block;
+    font-size: $header3;
+    color: white;
+    background: #861B1B;
+   /* background: rgb(53, 13, 13); */
+    border-radius: 100%;
+    padding: 3rem 4rem;
+}
+
+.order-seq-item {
+    padding: 3.2rem 4.4rem;
+    flex: 1 1 30rem;
+    p {
+        padding-top: 2rem;
+    }
+}
+
+.order-seq-num p {
+    padding-top: 0rem;
+}
+
+/*SECTION ORDER SEND*/
+
+.send-order {
+    min-height: 40vh;
+    color: black;
+    text-align: center;
+    padding: 5rem 4rem;
+    font-size: $header3;
+    p {
+        font-size: $bodysize;
+    }
+    span {
+        color: rgb(63, 63, 63);
+        font-size: 1.2rem;
+    }
+}
+
+.send-order form {
+    display: grid;
+    grid-template-columns: repeat(3, 35rem);
+    grid-template-rows: repeat(3, 10rem);
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
