@@ -600,6 +600,9 @@ a {
     width: 100%;
     padding: 5rem;
   }
+  .contacts-container ul {
+    padding-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 1425px) {
@@ -672,6 +675,9 @@ a {
 }
 
 @media screen and (max-width: 650px) {
+  .hero h2 {
+    font-size: 3.6rem;
+  }
   .translation-type {
     padding: 2rem;
   }
