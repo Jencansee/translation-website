@@ -1,3 +1,29 @@
+.hidden-text-container {
+    display: none;
+    background-color: black;
+    padding: 4rem;
+    font-size: $bodysize;
+    h4,span{
+        font-size: $header3;
+        font-weight: bold;
+    }
+    .text-hidden {
+        width: 80%;
+        margin: auto;
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .contacts-flex-hide-text {
+        flex: 1 1 30rem;
+        padding: 1rem 0;
+    }
+    .right-box {
+        flex: 2 1 30rem;
+        text-align: end;
+    }
+}
+
 .map-container {
     position: relative;
 }
@@ -16,14 +42,13 @@
         font-weight: bold;
     }
 }
-
 .contacts-container {
     min-height: 18vh;
     background-color: black;
     @include flex(row, space-around, center);
     flex-wrap: wrap;
-
-    ul{
+    padding: 2rem 0rem;
+    ul {
     @include flex(row, center, center);    
     flex: 1 1 30rem;
     flex-wrap: wrap;

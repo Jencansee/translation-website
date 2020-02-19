@@ -1,9 +1,7 @@
 .hero {
     min-height: 95vh;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(134, 27, 27, 0.9) 32.74%, rgba(53, 13, 13, 0.9) 101.49%), url(/srcs/img/hero-bg.jpg) no-repeat;
+    background: linear-gradient(180deg, #000 1.49%, #4B2368C2 32.74%, #3A0F58 101.49%), url(../img/backmain.jpg) no-repeat;
     color: #f4f4f4;
-    /*linear-gradient(180deg, rgba(0,0,0,0.9) 1.49%, rgba(75, 35, 104, 0.9) 32.74%, rgba(58, 15, 88, 0.9) 101.49%), url(/srcs/img/home-bg.jpg); purple*/
-    /*linear-gradient(180deg, #000000 1.49%, #4B2368 32.74%, #3A0F58 101.49%)*/
     h2 {
         font-size: $header2;
         text-align: center;
@@ -12,7 +10,7 @@
 }
 
 .garanty-container {
-    @include flex(row, center, center);
+    @include flex(row, center, center); 
     flex-wrap: wrap;
     font-size: $bodysize;
     padding: 10rem 0rem;
@@ -51,7 +49,7 @@
     @include flex(column, center, center);
     background:linear-gradient(to bottom, #1e1e1e,#1a1a1a);
     
-    h2 {
+    h3 {
         padding: 5rem 0;
         font-size: 4rem;
         text-align: center;
@@ -80,7 +78,7 @@
     text-align: center;
     font-size: $bodysize;
 
-    h3 {
+    h4 {
         font-size: $header3;
         font-weight: bold;
     }
@@ -90,7 +88,7 @@
    width:80%;
    margin: auto;
    padding: 8rem 15rem;
-   background: $red-back-clr;
+   background: #861B1B;
     p {
     text-align: start;
     }
@@ -98,16 +96,25 @@
 .trust-us-recommendation{
     padding: 4rem 0rem;
     color:  $gray;
+    span {
+        font-size: $header3;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+    p {
+        padding: 0 2rem;
+    }
 }
 
 .recommend-companies-container {
     display: grid;
-    grid-template-columns: repeat(5, 30rem);
-    grid-template-rows: 50% 50%;
-    gap: 2rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    gap: 3rem 1rem;
     justify-content: center;
     align-items: center;
     padding: 4rem 2rem;
+    width: 85%;
+    margin: auto;
 }
 
 .recom-company {
@@ -138,7 +145,7 @@
     font-size: $header3;
     color: white;
     background: #861B1B;
-   /* background: rgb(53, 13, 13); */
+    border: 1px solid white;
     border-radius: 100%;
     padding: 3rem 4rem;
 }
@@ -158,7 +165,9 @@
 /*SECTION ORDER SEND*/
 
 .send-order {
+    max-width: 1170px;
     min-height: 40vh;
+    margin:auto;
     color: black;
     text-align: center;
     padding: 5rem 4rem;
@@ -167,16 +176,39 @@
         font-size: $bodysize;
     }
     span {
+        padding-top: 0rem;
         color: rgb(63, 63, 63);
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    h5{
+        font-size: $header3;
     }
 }
 
 .send-order form {
-    display: grid;
-    grid-template-columns: repeat(3, 35rem);
-    grid-template-rows: repeat(3, 10rem);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    flex-wrap: wrap;
+}
+.flexbox-three {
+    flex: 1 1 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.send-order label {
+    font-size:$regular;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 30rem;
+    flex-wrap: nowrap;
+}
+
+.burger {
+    display: none;
 }

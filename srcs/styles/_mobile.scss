@@ -1,0 +1,100 @@
+@media screen and (max-width:950px) {
+    .hero {
+        h2{
+        padding-top: 5rem;
+        font-size: 4rem;
+    }
+        .garanty-container{
+            padding: 4rem 0rem;
+        }
+        .garanty{
+            padding: 4rem;
+        }
+        .hero-form {
+            padding: 2rem 0 4rem 0;
+        }
+    }
+    .advantages-section {
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+    .trust-us-text {
+        width: 100%;
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width:1425px){
+    .recommend-companies-container{
+        width: 100%;
+    }
+    .hide-svg-company {
+        display: none;
+    }
+    .hidden-text-container {
+        display: block;
+    }
+    .map-text-container {
+        display: none;
+    }
+    .burger {
+        position: relative;
+        display: block;
+        cursor: pointer;
+    }
+    .burger span {
+        padding: 0.2rem 2rem;
+        background: white;
+        margin: 0.4rem 0rem;
+        display: block;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links {
+        font-size: 4rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: black;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:100%;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 1s ease;
+    }
+    
+    .nav-open {
+        transform: translateX(-100%);
+    }
+    .toggle .line1 {
+        transform: rotateZ(45deg) translateY(300%);
+        background: white;
+    }
+
+    .toggle .line2 {
+        opacity:0;
+    }
+
+    .toggle .line3 {
+        transform: rotateZ(-45deg) translateY(-300%);
+        background: white;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .translation-type{
+        padding: 2rem;
+    }
+    .recommend-companies-container{
+        padding: 4rem 0 0 0;
+    }
+    .text-hidden {
+        width: 100%;
+    }
+    .right-box{
+        text-align: start !important;
+    }
+}
