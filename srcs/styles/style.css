@@ -220,8 +220,8 @@ a {
 
 .hero {
   min-height: 95vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.49%, #000), color-stop(32.74%, #4B2368C2), color-stop(101.49%, #3A0F58)), url(../img/backmain.jpg) no-repeat;
-  background: linear-gradient(180deg, #000 1.49%, #4B2368C2 32.74%, #3A0F58 101.49%), url(../img/backmain.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(32.74%, #424242C9), color-stop(101.49%, #CC660EE3)), url(../img/backmain.jpg) no-repeat;
+  background: linear-gradient(180deg, #000, #424242C9 32.74%, #CC660EE3 101.49%), url(../img/backmain.jpg) no-repeat;
   color: #f4f4f4;
 }
 
@@ -229,6 +229,11 @@ a {
   font-size: 6rem;
   text-align: center;
   padding-top: 10rem;
+}
+
+.hero-wrap {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .garanty-container {
@@ -248,12 +253,16 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 2rem;
-  padding: 10rem 0rem;
+  padding: 15rem 0rem;
 }
 
 .garanty-container .garanty {
-  padding: 5rem;
+  padding: 0 5rem;
   text-align: center;
+}
+
+.garanty-container .garanty span {
+  font-weight: bold;
 }
 
 .hero-form {
@@ -272,11 +281,15 @@ a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 0 2rem 0;
+  padding: 0 0 4rem 0;
 }
 
 .input-container {
   text-align: center;
+}
+
+.input-container input {
+  width: 35rem;
 }
 
 .input-container input[type=submit] {
@@ -420,6 +433,8 @@ a {
 
 .recom-company {
   fill: #333;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
 }
 
 .recom-company:hover {
@@ -575,6 +590,10 @@ a {
       flex-wrap: nowrap;
 }
 
+.send-order input[type=file] {
+  border: 2px solid #b5b5b5;
+}
+
 .burger {
   display: none;
 }
@@ -676,7 +695,7 @@ a {
 
 @media screen and (max-width: 650px) {
   .hero h2 {
-    font-size: 3.6rem;
+    font-size: 4rem;
   }
   .translation-type {
     padding: 2rem;
@@ -689,6 +708,15 @@ a {
   }
   .right-box {
     text-align: start !important;
+  }
+  .send-order h5 {
+    padding: 1rem;
+  }
+  .advantages-section h3 {
+    padding: 5rem 1rem;
+  }
+  .footer-text {
+    padding: 2rem;
   }
 }
 
