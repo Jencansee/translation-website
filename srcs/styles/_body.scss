@@ -1,5 +1,4 @@
 .hero {
-    min-height: 95vh;
     background: linear-gradient(180deg, #000, #424242C9 32.74%, #CC660EE3 101.49%), url(../img/backmain.jpg) no-repeat;
     color: #f4f4f4;
     h2 {
@@ -56,7 +55,6 @@
 
 /*SECTION ADVANTAGES*/
 .advantages-section {
-    min-height: 40vh;
     @include flex(column, center, center);
     background:linear-gradient(to bottom, #1e1e1e,#1a1a1a);
     
@@ -85,7 +83,6 @@
 
 /*TRUST US SECTION*/
 .trust-us {
-    min-height: 60vh;
     text-align: center;
     font-size: $bodysize;
 
@@ -159,7 +156,9 @@
     background: #861B1B;
     border: 1px solid white;
     border-radius: 100%;
-    padding: 3rem 4rem;
+    padding: 3rem 0;
+    min-height: 10rem;
+    min-width: 10rem;
 }
 
 .order-seq-item {
@@ -178,7 +177,6 @@
 
 .send-order {
     max-width: 1170px;
-    min-height: 40vh;
     margin:auto;
     color: black;
     text-align: center;
